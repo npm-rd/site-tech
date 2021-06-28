@@ -131,10 +131,19 @@ section {
     width: 90%;
 }
 
-.presenca .line {
-    border-color: #FFAD00;
+.presenca h5, 
+.presenca h4 
+ {
+    color: #527697 !important;
 }
 
+.presenca .line {
+    border-color: #FFAD00 !important;
+}
+
+.presenca button {
+    background-color: #FFAD00 !important;
+}
 /* ================================= */
 
 /* INICIO DO HEADER */

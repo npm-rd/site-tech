@@ -67,6 +67,24 @@
     background-color: #ECECEC;
 }
 
+#quem-somos .slogan{
+    position: absolute;
+    bottom: 4.5em;
+}
+
+#quem-somos .slogan p{
+    font-size: 15px;
+}
+
+@media (max-width:576px) {
+    #cta h5 {
+        font-size: 1.5em;
+    }
+    #cta .container, #cta .row, #cta .row >div {
+        padding: 1em !important;
+    }
+}
+
 @media (max-width:576px) {
     #cta h5 {
         font-size: 1.5em;
