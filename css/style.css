@@ -144,6 +144,20 @@ section {
 .presenca button {
     background-color: #FFAD00 !important;
 }
+
+#skills h4 {
+    color: #527697;
+}
+
+.skill {
+    margin-top: 1.5em;
+    padding: 2em 0 2em 0;
+}
+
+.skill-dark {
+    background-color: #ECECEC;
+}
+
 /* ================================= */
 
 /* INICIO DO HEADER */

@@ -45,6 +45,11 @@
     font-weight: bold;
 }
 
+#fale-conosco h4 {
+    color: #5D9EC5;
+    font-weight: bold;
+}
+
 @media (max-width:991px) {
     .card-servico {
         height: 100%;
@@ -74,41 +79,26 @@
     background: url("../img/banner-inboung-marketing.png") center !important;
 }
 
-#conteudo {
-    /*  */
-}
-
 #conteudo .content-topic {
-    text-align: center !important;
-    margin: 4em 0 4em 0;
+    float: left;
 }
 
 #conteudo h2 {
     position: relative;
     font-weight: bold;
     color: #527697;
-    margin-bottom: 1.2em;
-    width: 100%;
+    width: fit-content;
+    border-bottom: 5px solid #FFAD00;
+    display: inline-block;
+    margin-bottom: 1em;
 }
 
-#conteudo h4 {
-    margin-top: 2em;
-}
-
-#conteudo h2::after {
-    position: absolute;
-    content: "";
-    top: 1.2em;
-    left: 0;
-    width: 10.7em;
-    height: 8px;
-    background-color: #DEBE7A;
-    margin-left: 7.5em;
+#conteudo p {
+    margin-bottom: 2em;
 }
 
 #conteudo img {
     width: 15em;
-    float: left;
 }
 
 @media (max-width:767px) {
