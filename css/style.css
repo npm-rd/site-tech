@@ -104,7 +104,8 @@ section {
 
 .border-lg-to-right,
 .border-lg-to-left {
-    width: fit-content;
+    width: 100%;
+    position: relative;
 }
 
 .border-lg-to-right::after,
@@ -112,7 +113,7 @@ section {
     content: '';
     position: absolute;
     top: 40%;
-    width: 50%;
+    width: 100%;
     height: 8px;
     background-color: #5D9EC5;
     border-radius: 20px;
@@ -120,6 +121,18 @@ section {
 
 .border-lg-to-left::after {
     left: -50%;
+}
+
+.border-lg-to-right::after {
+    right: -50%;
+}
+
+.help img {
+    width: 90%;
+}
+
+.presenca .line {
+    border-color: #FFAD00;
 }
 
 /* ================================= */
@@ -210,11 +223,6 @@ header .icons a {
 
 header .icons a:hover {
     text-decoration: none !important;
-}
-
-header .navbar-toggler {
-    /* color: white;
-    background: white; */
 }
 
 header .item-collapse:hover > .dropdown {
@@ -385,7 +393,7 @@ header #back-top {
     top: 0;
     left: -12em;
     width: 100%;
-    height: 90%;
+    height: 100%;
     background: rgb(93, 158, 197);
     background: linear-gradient(90deg, rgba(93, 158, 197, 1) 0%, rgba(74, 94, 122, 1) 100%);
 }
@@ -744,10 +752,6 @@ header #back-top {
     color: white;
     border-radius: 0;
     padding: 10px 20px 10px 20px;
-}
-
-#fale-conosco .help img {
-    width: 90%;
 }
 
 @media screen and (max-width:991px) {

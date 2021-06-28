@@ -33,6 +33,40 @@
     right: .5em !important;
 }
 
+.fix-bottom {
+    position: absolute !important;
+    bottom: 0 !important;
+    right: .5em !important;
+}
+
+#visao .container {
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+
+#visao h4 {
+    color: #527697;
+}
+
+#visao i {
+    color: #5D9EC5;
+    font-size: 4em;
+    margin-bottom: .5em;
+}
+
+#skills h4 {
+    color: #527697;
+}
+
+.skill {
+    margin-top: 1.5em;
+    padding: 2em 0 2em 0;
+}
+
+.skill-dark {
+    background-color: #ECECEC;
+}
+
 @media (max-width:576px) {
     #cta h5 {
         font-size: 1.5em;
