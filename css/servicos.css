@@ -83,6 +83,10 @@
     float: left;
 }
 
+#conteudo .container {
+    padding: 2em 0 2em 0;
+}
+
 #conteudo h2 {
     position: relative;
     font-weight: bold;
@@ -161,5 +165,21 @@
 /* ================================= */
 
 /* FIM DESENVOLVIMENTO */
+
+/* ================================= */
+
+/* ================================= */
+
+/* INICIO STARTUP */
+
+/* ================================= */
+
+#startup #home {
+    background: url("../img/banner-startup.png") center !important;
+}
+
+/* ================================= */
+
+/* FIM STARTUP */
 
 /* ================================= */

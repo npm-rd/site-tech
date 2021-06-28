@@ -31,6 +31,10 @@ section {
     border-radius: 20px;
 }
 
+.fit-content {
+    width: fit-content !important;
+}
+
 .border-bottom {
     border-bottom: 6px solid #DEBE7A !important;
 }
