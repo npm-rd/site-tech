@@ -1,0 +1,175 @@
+#home {
+    background: url("../img/servicos.png") center;
+}
+
+#home h1 {
+    font-weight: 900;
+}
+
+#vantagens>div {
+    margin-bottom: 5em !important;
+}
+
+#servicos a {
+    text-decoration: none !important;
+    color: black;
+}
+
+/* ================================= */
+
+/* INICIO SERVIÇO */
+
+/* ================================= */
+
+.card-servico {
+    height: 25em;
+    color: white;
+    border-radius: 20px;
+    background-color: #5D9EC5;
+}
+
+.card-servico .card-icon {
+    margin-bottom: 1em;
+    width: 8em;
+    filter: invert(100%);
+}
+
+.card-servico h2 {
+    margin-top: 1em;
+    margin-bottom: 1em !important;
+    color: black !important;
+}
+
+.card-servico h4 {
+    margin-bottom: 1em;
+    font-weight: bold;
+}
+
+@media (max-width:991px) {
+    .card-servico {
+        height: 100%;
+    }
+    .card-servico h4 {
+        display: none;
+    }
+    .card-desc {
+        font-size: 1.2em !important;
+        font-weight: bold;
+    }
+}
+
+/* ================================= */
+
+/* FIM SERVIÇO */
+
+/* ================================= */
+
+/* ================================= */
+
+/* INICIO INBOUND MARKETING */
+
+/* ================================= */
+
+#inbound-marketing #home {
+    background: url("../img/banner-inboung-marketing.png") center !important;
+}
+
+#conteudo {
+    /*  */
+}
+
+#conteudo .content-topic {
+    text-align: center !important;
+    margin: 4em 0 4em 0;
+}
+
+#conteudo h2 {
+    position: relative;
+    font-weight: bold;
+    color: #527697;
+    margin-bottom: 1.2em;
+    width: 100%;
+}
+
+#conteudo h4 {
+    margin-top: 2em;
+}
+
+#conteudo h2::after {
+    position: absolute;
+    content: "";
+    top: 1.2em;
+    left: 0;
+    width: 10.7em;
+    height: 8px;
+    background-color: #DEBE7A;
+    margin-left: 7.5em;
+}
+
+#conteudo img {
+    width: 15em;
+    float: left;
+}
+
+@media (max-width:767px) {
+    #conteudo h2::after {
+        margin-left: 0;
+    }
+    #conteudo img {
+        float: none;
+    }
+}
+
+/* ================================= */
+
+/* FIM INBOUND MARKETING */
+
+/* ================================= */
+
+/* ================================= */
+
+/* INICIO PERFORMANCE DIGITAL */
+
+/* ================================= */
+
+#performance-digital #home {
+    background: url("../img/banner-performance-digital.png") center !important;
+}
+
+/* ================================= */
+
+/* FIM PERFORMANCE DIGITAL */
+
+/* ================================= */
+
+/* ================================= */
+
+/* INICIO CRIAÇÃO DE SITE */
+
+/* ================================= */
+
+#criacao-de-site #home {
+    background: url("../img/banner-criacao-de-sites.png") center !important;
+}
+
+/* ================================= */
+
+/* FIM CRIAÇÃO DE SITE */
+
+/* ================================= */
+
+/* ================================= */
+
+/* INICIO DESENVOLVIMENTO */
+
+/* ================================= */
+
+#desenvolvimento #home {
+    background: url("../img/banner-desenvolvimento.png") center !important;
+}
+
+/* ================================= */
+
+/* FIM DESENVOLVIMENTO */
+
+/* ================================= */

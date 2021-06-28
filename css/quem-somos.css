@@ -1,0 +1,43 @@
+#home {
+    background: url("../img/quem-somos/quem-somos.png") center;
+}
+
+#home h1 {
+    font-weight: 1000 !important;
+}
+
+#cta h5 {
+    font-size: 2em;
+}
+
+#cta .line {
+    border-bottom: 5px solid #FF6F00;
+    padding-bottom: .5em !important;
+}
+
+#cta .btn {
+    margin-top: 5em;
+    background: #FF6F00;
+    color: white;
+    transition: .1s linear;
+}
+
+#cta .btn:hover {
+    transform: scale(120%);
+    transition: .1s linear;
+}
+
+.fixar {
+    position: fixed !important;
+    top: 5em !important;
+    right: .5em !important;
+}
+
+@media (max-width:576px) {
+    #cta h5 {
+        font-size: 1.5em;
+    }
+    #cta .container, #cta .row, #cta .row >div {
+        padding: 1em !important;
+    }
+}
