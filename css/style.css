@@ -649,13 +649,36 @@ header #whatsapp {
 
 #marcas .marcas-logos img {
     width: 80%;
-    filter: grayscale(100%);
+    /* filter: grayscale(100%); */
     transition: .1s linear;
 }
 
-#marcas .marcas-logos img:hover {
-    transform: scale(1.2);
+#marcas .marcas-logos .case {
+    transition: .5s linear;
+}
+
+#marcas .marcas-logos .card-text {
+    position: absolute;
+    top: 2.5em;
+    transform: rotateX(180deg);
     transition: .1s linear;
+    color: white;
+    opacity: 0;
+}
+
+#marcas .marcas-logos .case:hover>.card {
+    transform: rotateX(180deg);
+    transition: .5s linear;
+    background-color: rgba(0, 0, 0, 0.726);
+}
+
+#marcas .marcas-logos .case:hover > .card .card-text {
+    transition: .9s linear;
+    opacity: 1;
+}
+
+#marcas .marcas-logos .case:hover > .card .card-image {
+    opacity: 0;
 }
 
 /* ================================= */

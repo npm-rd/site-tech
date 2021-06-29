@@ -109,6 +109,17 @@ function scrollToTop() {
   });
 }
 
+function sendEmail() {
+    var nome = $('#nome-input').val()
+    var email = $('#email-input').val()
+    var telefone = $('#telefone-input').val()
+    var servico = $('#servico-input').val()
+    var mensagem = $('#mensagem-input').val()
+    var button = $('#button-form')
+
+    console.log({nome: nome, email: email, telefone:telefone, servico:servico, mensagem:mensagem})
+}
+
 function loadPage() {
   AOS.init()
   carousel();
