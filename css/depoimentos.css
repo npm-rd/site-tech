@@ -1,0 +1,11 @@
+#home {
+    background: url("../img/banner-depoimentos.png") !important;
+    background-position: 50% 50% !important;
+}
+
+.depoimento {
+    background: rgb(93, 158, 197);
+    background: linear-gradient(90deg, rgba(93, 158, 197, 1) 0%, rgba(74, 94, 122, 1) 100%);
+    padding: 5em !important;
+    color: white;
+}
