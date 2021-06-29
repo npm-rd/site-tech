@@ -35,7 +35,7 @@
 
 .fix-bottom {
     position: absolute !important;
-    bottom: 0 !important;
+    bottom: 10em !important;
     right: .5em !important;
 }
 

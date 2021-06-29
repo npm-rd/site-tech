@@ -13,6 +13,10 @@ debounce = function (func, wait, immediate) {
   };
 };
 
+function perc(numero, perc) {
+  return numero * perc / 100
+}
+
 function carousel() {
   var $simpleCarousel = document.querySelector(".js-carousel--simple");
   var carousel = document.querySelectorAll(".c-carousel__slides").length;
