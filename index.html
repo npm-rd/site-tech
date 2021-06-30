@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/carrousel.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="./css/glider.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -23,7 +24,8 @@
 
 <body onload="loadPage()">
     <header>
-        <a href="https://api.whatsapp.com/send?phone=5511950902703" target="_blank" id="whatsapp" class="fab fa-whatsapp"></a>
+        <a href="https://api.whatsapp.com/send?phone=5511950902703" target="_blank" id="whatsapp"
+            class="fab fa-whatsapp"></a>
         <a id="back-top">
             <i class="fas fa-chevron-up" aria-hidden="true"></i>
         </a>
@@ -54,7 +56,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="./depoimentos.html">Cases de sucesso</a>
+                            <a class="nav-link" aria-current="page" href="./depoimentos.html">Depoimentos</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="./clientes.html">Clientes</a>
@@ -236,63 +238,214 @@
                 <h2 class="border-to-right">Marcas que confiam na Tech Eleven</h2>
             </div>
         </div>
-        <div class="marcas-logos mt-5">
+        <div class="marcas-logos mt-5 position-relative">
             <div class="container p-5">
-                <div class="row justify-content-center text-center align-items-center">
-                    <div class="case col-lg-3 col-md-6" data-aos="fade-right">
-                        <a href="https://arenavidros.com.br/" class="card">
-                            <div class="card-text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, officia. Quae eos doloribus
+                <div class="gallery">
+                    <div class="gallery__prev"></div>
+                    <div class="gallery__next"></div>
+                    <div class="gallery__stream">
+                        <div class="gallery__item">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="./img/lotus-logo.png" alt="" style="width: 60%;">
+                                </div>
                             </div>
-                            <div class="card-image">
-                                <img src="./img/arena-logo.png" alt="" style="width: 100%;">
-                            </div>
-                        </a>
-                    </div>
-                    <div class="case col-lg-3 col-md-6" data-aos="fade-right">
-                        <a href="https://www.colegiodomhenrique.com.br/" class="card">
-                            <div class="card-text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, officia. Quae eos doloribus
-                            </div>
-                            <div class="card-image">
-                                <img src="./img/dom-henrique-logo.png" alt="" style="width: 60%;">
-                            </div>
-                        </a>
-                    </div>
-                    <div class="case col-lg-3 col-md-4" data-aos="fade-right">
-                        <a href="https://www.colegiotutor.com.br/" class="card">
-                            <div class="card-image">
-                                <img src="./img/20191210205335582.jpg" alt="">
-                            </div>
-                        </a>
-                    </div>
-                    <div class="case col-lg-3 col-md-4" data-aos="fade-right">
-                        <a href="https://www.genioshop.com.br/" class="card">
-                            <div class="card-image">
-                                <img src="./img/1590696554_logo.png" alt="">
-                            </div>
-                        </a>
-                    </div>
-                    <div class="case col-lg-3 col-md-4" data-aos="fade-right">
-                        <div class="card">
-                            <div class="card-image">
-                                <img src="./img/sollar-paulistano.png" alt="">
+
+                            <div class="lista-servicos">
+                                <h4>Serviços prestados</h4>
+                                <p>
+                                    Criação de Site e Loja Virtual
+                                </p>
                             </div>
                         </div>
-                    </div>
-                    <div class="case col-lg-3 col-md-6" data-aos="fade-right">
-                        <div class="card">
-                            <div class="card-image">
-                                <img src="./img/voa-cobrancas.png" alt="">
+                        <div class="gallery__item">
+                            <div class="card">
+                                <a target="_blank" href="https://geniosshop.commercesuite.com.br/borrachas/borrachauto"
+                                    class="link">
+                                    <div>
+                                        <div class="link-icon">
+                                            <i class="fa fa-external-link-square-alt" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="link-name">Acessar site</div>
+                                    </div>
+                                </a>
+                                <div class="card-image">
+                                    <img src="./img/BorrachAuto-logo.png" alt="" style="width: 60%;">
+                                </div>
+                            </div>
+                            <div class="lista-servicos">
+                                <h4>Serviços prestados</h4>
+                                <p>
+                                    Desenvolvimento de Produtos Digitais, Marketing Digital, Criação de Site e Loja
+                                    Virtual, Inbound Marketing, Business Analytics
+                                </p>
                             </div>
                         </div>
-                    </div>
-                    <div class="case col-lg-3 col-md-6" data-aos="fade-right">
-                        <a href="https://weconsorcios.com.br/" class="card">
-                            <div class="card-image">
-                                <img src="./img/vve-consorcios.png" alt="">
+                        <div class="gallery__item">
+                            <div class="card">
+                                <div class="card-image text-center">
+                                    <img src="./img/muito-mais-logo.png" alt="">
+                                </div>
                             </div>
-                        </a>
+
+                            <div class="lista-servicos">
+                                <h4>Serviços prestados</h4>
+                                <p>
+                                    Desenvolvimento de Produtos Digitais, Marketing Digital, Criação de Site e Loja
+                                    Virtual, Inbound Marketing, Business Analytics, Startup
+                                </p>
+                            </div>
+                        </div>
+                        <div class="gallery__item">
+                            <div class="card">
+                                <a target="_blank" href="https://www.genioshop.com.br/" class="link">
+                                    <div>
+                                        <div class="link-icon">
+                                            <i class="fa fa-external-link-square-alt" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="link-name">Acessar site</div>
+                                    </div>
+                                </a>
+                                <div class="card-image">
+                                    <img src="./img/1590696554_logo.png" alt="">
+                                </div>
+                            </div>
+                            <div class="lista-servicos">
+                                <h4>Serviços prestados</h4>
+                                <p>
+                                    Desenvolvimento de Produtos Digitais, Marketing Digital, Criação de Site e Loja
+                                    Virtual, Inbound Marketing, Business Analytics, Startup
+                                </p>
+                            </div>
+                        </div>
+                        <div class="gallery__item">
+                            <div class="card">
+                                <a target="_blank" href="https://weconsorcios.com.br/" class="link">
+                                    <div>
+                                        <div class="link-icon">
+                                            <i class="fa fa-external-link-square-alt" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="link-name">Acessar site</div>
+                                    </div>
+                                </a>
+                                <div class="card-image">
+                                    <img src="./img/we-consorcios.png" alt="">
+                                </div>
+                            </div>
+                            <div class="lista-servicos">
+                                <h4>Serviços prestados</h4>
+                                <p>
+                                    Criação de Site e Loja Virtual
+                                </p>
+                            </div>
+                        </div>
+                        <div class="gallery__item">
+                            <div class="card">
+                                <a target="_blank" href="https://arenavidros.com.br/" class="link">
+                                    <div>
+                                        <div class="link-icon">
+                                            <i class="fa fa-external-link-square-alt" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="link-name">Acessar site</div>
+                                    </div>
+                                </a>
+                                <div class="card-image">
+                                    <img src="./img/arena-logo.png" alt="" style="width: 100%;">
+                                </div>
+                            </div>
+                            <div class="lista-servicos">
+                                <h4>Serviços prestados</h4>
+                                <p>
+                                    Desenvolvimento de Produtos Digitais, Marketing Digital, Criação de Site e Loja
+                                    Virtual, Inbound Marketing, Business Analytics
+                                </p>
+                            </div>
+                        </div>
+                        <div class="gallery__item">
+                            <div class="card">
+                                <a target="_blank" href="https://www.sollarpaulistanoimoveis.com.br/" class="link">
+                                    <div>
+                                        <div class="link-icon">
+                                            <i class="fa fa-external-link-square-alt" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="link-name">Acessar site</div>
+                                    </div>
+                                </a>
+                                <div class="card-image">
+                                    <img src="./img/sollar-paulistano.png" alt="">
+                                </div>
+                            </div>
+                            <div class="lista-servicos">
+                                <h4>Serviços prestados</h4>
+                                <p>
+                                    Marketing Digital, Criação de Site e Loja Virtual, Inbound Marketing
+                                </p>
+                            </div>
+                        </div>
+                        <div class="gallery__item">
+                            <div class="card">
+                                <a target="_blank" href="https://voacobrancaseducacionais.com.br/" class="link">
+                                    <div>
+                                        <div class="link-icon">
+                                            <i class="fa fa-external-link-square-alt" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="link-name">Acessar site</div>
+                                    </div>
+                                </a>
+                                <div class="card-image">
+                                    <img src="./img/voa-cobrancas.png" alt="">
+                                </div>
+                            </div>
+                            <div class="lista-servicos">
+                                <h4>Serviços prestados</h4>
+                                <p>
+                                    Desenvolvimento de Produtos Digitais, Marketing Digital, Criação de Site e Loja
+                                    Virtual, Inbound Marketing
+                                </p>
+                            </div>
+                        </div>
+                        <div class="gallery__item">
+                            <div class="card">
+                                <a target="_blank" href="https://www.colegiodomhenrique.com.br/" class="link">
+                                    <div>
+                                        <div class="link-icon">
+                                            <i class="fa fa-external-link-square-alt" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="link-name">Acessar site</div>
+                                    </div>
+                                </a>
+                                <div class="card-image">
+                                    <img src="./img/dom-henrique-logo.png" alt="" style="width: 60%;">
+                                </div>
+                            </div>
+                            <div class="lista-servicos">
+                                <h4>Serviços prestados</h4>
+                                <p>
+                                    Marketing Digital, Inbound Marketing
+                                </p>
+                            </div>
+                        </div>
+                        <div class="gallery__item">
+                            <div class="card">
+                                <a target="_blank" href="https://www.colegiotutor.com.br/" class="link">
+                                    <div>
+                                        <div class="link-icon">
+                                            <i class="fa fa-external-link-square-alt" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="link-name">Acessar site</div>
+                                    </div>
+                                </a>
+                                <div class="card-image text-center">
+                                    <img src="./img/20191210205335582.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="lista-servicos">
+                                <h4>Serviços prestados</h4>
+                                <p>
+                                    Marketing Digital, Inbound Marketing
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -318,7 +471,8 @@
                             planejamento estratégico aplicamos o SEO (Search Engine Optimization) que conta com diversas
                             aplicações técnicas, com isso logo começamos a listar as primeiras melhorias com mais 60% no
                             aumento de sua receita de vendas em 2021.</p>
-                        <a class="btn btn-sm btn-light" href="./depoimentos.html#genios-shop" role="button">Leia mais...</a>
+                        <a class="btn btn-sm btn-light" href="./depoimentos.html#genios-shop" role="button">Leia
+                            mais...</a>
                     </div>
                 </div>
             </div>
@@ -328,8 +482,14 @@
                 <div class="row">
                     <div class="col-md-12 col-lg-6" data-aos="fade-right">
                         <h4>We Consórcios - Criação do site</h4>
-                        <p>A We Consórcio contratou a Tech Eleven em fevereiro de 2021 para desenvolver sua plataforma (site) marketplace. O site foi desenvolvido e idealizado para dar suporte a inédita estratégia de Inbound Marketing relacionado ao seu mix de produtos. Para isso, atuamos em um planejamento profundo, envolvendo profissionais de SEO, UI, UX, Desenvolvimento e Monitoramento, para transformar o site em um canal de geração de leads interessados em diversos tipos de consórcios.</p>
-                        <a class="btn btn-sm btn-light" href="./depoimentos.html#we-consorcio" role="button">Leia mais...</a>
+                        <p>A We Consórcio contratou a Tech Eleven em fevereiro de 2021 para desenvolver sua plataforma
+                            (site) marketplace. O site foi desenvolvido e idealizado para dar suporte a inédita
+                            estratégia de Inbound Marketing relacionado ao seu mix de produtos. Para isso, atuamos em um
+                            planejamento profundo, envolvendo profissionais de SEO, UI, UX, Desenvolvimento e
+                            Monitoramento, para transformar o site em um canal de geração de leads interessados em
+                            diversos tipos de consórcios.</p>
+                        <a class="btn btn-sm btn-light" href="./depoimentos.html#we-consorcio" role="button">Leia
+                            mais...</a>
                     </div>
                     <div class="col-md-12 col-lg-6" data-aos="fade-left">
                         <img src="./img/mockup-tablet-celular-notebook-we.png" alt="">
@@ -352,7 +512,8 @@
                             planejamento estratégico aplicamos o SEO (Search Engine Optimization) que conta com diversas
                             aplicações técnicas, com isso logo começamos a listar as primeiras melhorias com mais 60% no
                             aumento de sua receita de vendas em 2021.</p>
-                        <a class="btn btn-sm btn-light" href="./depoimentos.html#colegio-tutor" role="button">Leia mais...</a>
+                        <a class="btn btn-sm btn-light" href="./depoimentos.html#colegio-tutor" role="button">Leia
+                            mais...</a>
                     </div>
                 </div>
             </div>
@@ -460,9 +621,9 @@
                                 <li><span class="fa-li"><i class="fab fa-linkedin"></i></span>Tech Eleven</li>
                             </ul>
                         </div>
-                        <div class=" align-items-center d-lg-flex invite">
-                            Quer fazer parte da nossa equipe?<br>
-                            Envie seu CV para: xxxxxx@xxx.com
+                        <div class="invite">
+                            <strong>Quer fazer parte da nossa equipe?</strong><br><br>
+                            Envie seu CV para: <br> pessoas@techeleven.com.br
                         </div>
                     </div>
                 </div>
@@ -472,17 +633,20 @@
                     <div class="form-group form-group-sm row">
                         <div class="col-lg-6">
                             <label class="mt-2">Nome*</label>
-                            <input id="nome-input" type="text" class="form-control form-control-sm" placeholder="Insira seu nome..">
+                            <input id="nome-input" type="text" class="form-control form-control-sm"
+                                placeholder="Insira seu nome..">
                         </div>
 
                         <div class="col-lg-6">
                             <label class="mt-2">Telefone*</label>
-                            <input id="telefone-input" type="text" class="form-control form-control-sm" placeholder="Insira seu telefone...">
+                            <input id="telefone-input" type="text" class="form-control form-control-sm"
+                                placeholder="Insira seu telefone...">
                         </div>
 
                         <div class="col-lg-12">
                             <label class="mt-2">Email*</label>
-                            <input id="email-input" type="text" class="form-control form-control-sm" placeholder="Insira seu email...">
+                            <input id="email-input" type="text" class="form-control form-control-sm"
+                                placeholder="Insira seu email...">
                         </div>
 
                         <div class="col-lg-12">
@@ -506,7 +670,8 @@
                             </div>
                         </div>
                     </div>
-                    <button type="button" id="button-form" class="btn btn-block btn-sm" style="margin-top: -1.5em;">Enviar</button>
+                    <button type="button" id="button-form" class="btn btn-block btn-sm"
+                        style="margin-top: -1.5em;">Enviar</button>
                 </div>
             </div>
         </div>
@@ -529,7 +694,7 @@
                                 <a href="./servicos" target="_blank">Serviços</a>
                             </li>
                             <li>
-                                <a href="./depoimentos.html" target="_blank">Cases de sucesso</a>
+                                <a href="./depoimentos.html" target="_blank">Depoimentos</a>
                             </li>
                             <li>
                                 <a href="./clientes.html" target="_blank">Clientes</a>
@@ -546,7 +711,7 @@
                                 <a href="./servicos/inbound-marketing.html" target="_blank">Inbound Marketing</a>
                             </li>
                             <li>
-                                <a href="./servicos/performance-digital.html" target="_blank">Performance Digital</a>
+                                <a href="./servicos/performance-digital.html" target="_blank">Marketing Digital</a>
                             </li>
                             <li>
                                 <a href="./servicos/business-analytics.html" target="_blank">Business Analytics</a>
@@ -588,9 +753,17 @@
         crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_NtrYdjlbap3M6MszfCHaW");
+        })();
+    </script>
     <script src="./js/index.js"></script>
     <script src="./js/glider.js"></script>
+    <script src="./js/carrousel.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 
 </body>
 

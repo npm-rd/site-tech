@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Com alguns anos de experiência do time, o know-how da Tech Eleven é igual a nenhum. De pequenos projetos web a projetos de grande escala, oferecemos soluções dinâmicas que seguem as últimas tendências digitais.">
+    <meta name="keywords" content="">
+    <title>Tech Eleven - Be Digital, Agile Transformation In Real Time</title>
+    <link rel="shortcut icon"
+        href="https://yata2.lss.locawebcorp.com.br/befb8c3df1af9eebbb169886e8dc195f348ae23f7368069aeb032a83e2542e67"
+        type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="./css/glider.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<style>
+    /* Global */
+
+    /* Gallery */
+
+    .marcas-logos {
+        height: 250px;
+    }
+
+    .gallery {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        width: 100%;
+        height: 90%;
+        max-height: 28vw;
+        overflow: hidden;
+    }
+
+    .gallery:before,
+    .gallery:after {
+        display: block;
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 20%;
+        height: 100%;
+        z-index: 3;
+    }
+
+    .gallery:before {
+        left: 0;
+        background: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+    }
+
+    .gallery:after {
+        right: 0;
+        background: linear-gradient(to left, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+    }
+
+    .gallery__stream {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+        height: 100%;
+    }
+
+    .gallery__item {
+        position: absolute;
+        width: 12em;
+        height: 100%;
+        transition: 1s all ease;
+        border-radius: 5px;
+    }
+
+    .gallery__item:nth-child(1) {
+        left: 20%;
+        z-index: 1;
+        transform: translateX(-100%) scale(.5);
+    }
+
+    .gallery__item:nth-child(2) {
+        left: 25%;
+        z-index: 2;
+        transform: translateX(-50%) scale(.8);
+    }
+
+    .gallery__item:nth-child(3) {
+        left: 50%;
+        z-index: 4;
+        transform: translateX(-50%) scale(1);
+    }
+
+    .gallery__item:nth-child(4) {
+        left: 75%;
+        z-index: 2;
+        transform: translateX(-50%) scale(.8);
+    }
+
+    .gallery__item:nth-child(n+5) {
+        left: 80%;
+        z-index: 1;
+        transform: scale(.5);
+    }
+
+    .gallery__item:nth-child(n+6) {
+        left: 100%;
+        z-index: 1;
+        transform: scale(.5);
+    }
+
+    /* Controllers */
+
+    .gallery__prev,
+    .gallery__next {
+        position: absolute;
+        top: 50%;
+        z-index: 4;
+        width: 50%;
+        height: 100%;
+        transform: translateX(-50%) translateY(-50%) scale(.8);
+        cursor: pointer;
+    }
+
+    .gallery__prev {
+        left: 0;
+    }
+
+    .gallery__next {
+        left: 100%;
+    }
+
+</style>
+
+
+<body onload="loadPage()">
+    <section id="marcas">
+        <div class="container">
+            <div class="d-flex justify-content-end text-right">
+                <h2 class="border-to-right">Marcas que confiam na Tech Eleven</h2>
+            </div>
+        </div>
+        <div class="marcas-logos mt-5 position-relative">
+            <div class="container p-5">
+                <div class="gallery">
+                    <div class="gallery__prev"></div>
+                    <div class="gallery__next"></div>
+                    <div class="gallery__stream">
+                        <div class="gallery__item bg-1">
+                            <a target="_blank" href="https://arenavidros.com.br/" class="card">
+                                <div class="card-text">
+                                    <div class="row services">
+                                        <div class="col-4">
+                                            <img src="./img/smartphones.png" alt="Desenvolvimento de Produtos Digitais"
+                                                class="service">
+                                        </div>
+                                        <div class="col-4">
+                                            <img src="./img/speaker.png" alt="Marketing Digital" class="service">
+                                        </div>
+                                        <div class="col-4">
+                                            <img src="./img/web-browser.png" alt="Criação de Site e Loja Virtual"
+                                                class="service">
+                                        </div>
+                                        <div class="col-4">
+                                            <img src="./img/magnet.png" alt="Inbound Marketing" class="service">
+                                        </div>
+                                        <div class="col-4">
+                                            <img src="./img/analytics.png" alt="Business Analytics" class="service">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-image">
+                                    <img src="./img/arena-logo.png" alt="" style="width: 100%;">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="gallery__item bg-2">
+                            <a target="_blank" href="https://www.colegiodomhenrique.com.br/" class="card">
+                                <div class="card-text">
+                                    <div class="row services">
+                                        <div class="col-4">
+                                            <img src="./img/speaker.png" alt="Marketing Digital" class="service">
+                                        </div>
+                                        <div class="col-4">
+                                            <img src="./img/magnet.png" alt="Inbound Marketing" class="service">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-image">
+                                    <img src="./img/dom-henrique-logo.png" alt="" style="width: 60%;">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="gallery__item bg-3">
+                            <a target="_blank" href="https://www.colegiotutor.com.br/" class="card">
+                                <div class="card-text">
+                                    <div class="row services">
+                                        <div class="col-4">
+                                            <img src="./img/speaker.png" alt="Marketing Digital" class="service">
+                                        </div>
+                                        <div class="col-4">
+                                            <img src="./img/magnet.png" alt="Inbound Marketing" class="service">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-image">
+                                    <img src="./img/20191210205335582.jpg" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="gallery__item bg-4">
+                            <a target="_blank" href="https://www.genioshop.com.br/" class="card">
+                                <div class="card-text">
+                                    <div class="row services">
+                                        <div class="col-4">
+                                            <img src="./img/smartphones.png" alt="Desenvolvimento de Produtos Digitais"
+                                                class="service">
+                                        </div>
+                                        <div class="col-4">
+                                            <img src="./img/speaker.png" alt="Marketing Digital" class="service">
+                                        </div>
+                                        <div class="col-4">
+                                            <img src="./img/web-browser.png" alt="Criação de Site e Loja Virtual"
+                                                class="service">
+                                        </div>
+                                        <div class="col-4">
+                                            <img src="./img/magnet.png" alt="Inbound Marketing" class="service">
+                                        </div>
+                                        <div class="col-4">
+                                            <img src="./img/analytics.png" alt="Business Analytics" class="service">
+                                        </div>
+                                        <div class="col-4">
+                                            <img src="./img/rocket.png" alt="Business Analytics" class="service">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-image">
+                                    <img src="./img/1590696554_logo.png" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="gallery__item bg-5">
+                            <a target="_blank" href="https://www.sollarpaulistanoimoveis.com.br/" class="card">
+                                <div class="card-text">
+                                    <div class="row services">
+                                        <div class="col-4">
+                                            <img src="./img/speaker.png" alt="Marketing Digital" class="service">
+                                        </div>
+                                        <div class="col-4">
+                                            <img src="./img/web-browser.png" alt="Criação de Site e Loja Virtual"
+                                                class="service">
+                                        </div>
+                                        <div class="col-4">
+                                            <img src="./img/magnet.png" alt="Inbound Marketing" class="service">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-image">
+                                    <img src="./img/sollar-paulistano.png" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="gallery__item bg-6">
+                            <a target="_blank" href="https://voacobrancaseducacionais.com.br/" class="card">
+                                <div class="card-text">
+                                    <div class="row services">
+                                        <div class="col-4">
+                                            <img src="./img/smartphones.png" alt="Desenvolvimento de Produtos Digitais"
+                                                class="service">
+                                        </div>
+                                        <div class="col-4">
+                                            <img src="./img/speaker.png" alt="Marketing Digital" class="service">
+                                        </div>
+                                        <div class="col-4">
+                                            <img src="./img/web-browser.png" alt="Criação de Site e Loja Virtual"
+                                                class="service">
+                                        </div>
+                                        <div class="col-4">
+                                            <img src="./img/magnet.png" alt="Inbound Marketing" class="service">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-image">
+                                    <img src="./img/voa-cobrancas.png" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="gallery__item bg-7">
+                            <a target="_blank" href="https://weconsorcios.com.br/" class="card">
+                                <div class="card-text">
+                                    <div class="row services">
+                                        <div class="col-4">
+                                            <img src="./img/web-browser.png" alt="Criação de Site e Loja Virtual"
+                                                class="service">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-image">
+                                    <img src="./img/vve-consorcios.png" alt="">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center text-center align-items-center d-none">
+                    <div class="case col-lg-3 col-md-6" data-aos="fade-right">
+                        <a target="_blank" href="https://arenavidros.com.br/" class="card">
+                            <div class="card-text">
+                                <div class="row services">
+                                    <div class="col-4">
+                                        <img src="./img/smartphones.png" alt="Desenvolvimento de Produtos Digitais"
+                                            class="service">
+                                    </div>
+                                    <div class="col-4">
+                                        <img src="./img/speaker.png" alt="Marketing Digital" class="service">
+                                    </div>
+                                    <div class="col-4">
+                                        <img src="./img/web-browser.png" alt="Criação de Site e Loja Virtual"
+                                            class="service">
+                                    </div>
+                                    <div class="col-4">
+                                        <img src="./img/magnet.png" alt="Inbound Marketing" class="service">
+                                    </div>
+                                    <div class="col-4">
+                                        <img src="./img/analytics.png" alt="Business Analytics" class="service">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-image">
+                                <img src="./img/arena-logo.png" alt="" style="width: 100%;">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="case col-lg-3 col-md-6" data-aos="fade-right">
+                        <a target="_blank" href="https://www.colegiodomhenrique.com.br/" class="card">
+                            <div class="card-text">
+                                <div class="row services">
+                                    <div class="col-4">
+                                        <img src="./img/speaker.png" alt="Marketing Digital" class="service">
+                                    </div>
+                                    <div class="col-4">
+                                        <img src="./img/magnet.png" alt="Inbound Marketing" class="service">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-image">
+                                <img src="./img/dom-henrique-logo.png" alt="" style="width: 60%;">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="case col-lg-3 col-md-4" data-aos="fade-right">
+                        <a target="_blank" href="https://www.colegiotutor.com.br/" class="card">
+                            <div class="card-text">
+                                <div class="row services">
+                                    <div class="col-4">
+                                        <img src="./img/speaker.png" alt="Marketing Digital" class="service">
+                                    </div>
+                                    <div class="col-4">
+                                        <img src="./img/magnet.png" alt="Inbound Marketing" class="service">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-image">
+                                <img src="./img/20191210205335582.jpg" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="case col-lg-3 col-md-4" data-aos="fade-right">
+                        <a target="_blank" href="https://www.genioshop.com.br/" class="card">
+                            <div class="card-text">
+                                <div class="row services">
+                                    <div class="col-4">
+                                        <img src="./img/smartphones.png" alt="Desenvolvimento de Produtos Digitais"
+                                            class="service">
+                                    </div>
+                                    <div class="col-4">
+                                        <img src="./img/speaker.png" alt="Marketing Digital" class="service">
+                                    </div>
+                                    <div class="col-4">
+                                        <img src="./img/web-browser.png" alt="Criação de Site e Loja Virtual"
+                                            class="service">
+                                    </div>
+                                    <div class="col-4">
+                                        <img src="./img/magnet.png" alt="Inbound Marketing" class="service">
+                                    </div>
+                                    <div class="col-4">
+                                        <img src="./img/analytics.png" alt="Business Analytics" class="service">
+                                    </div>
+                                    <div class="col-4">
+                                        <img src="./img/rocket.png" alt="Business Analytics" class="service">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-image">
+                                <img src="./img/1590696554_logo.png" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="case col-lg-3 col-md-4" data-aos="fade-right">
+                        <a target="_blank" href="https://www.sollarpaulistanoimoveis.com.br/" class="card">
+                            <div class="card-text">
+                                <div class="row services">
+                                    <div class="col-4">
+                                        <img src="./img/speaker.png" alt="Marketing Digital" class="service">
+                                    </div>
+                                    <div class="col-4">
+                                        <img src="./img/web-browser.png" alt="Criação de Site e Loja Virtual"
+                                            class="service">
+                                    </div>
+                                    <div class="col-4">
+                                        <img src="./img/magnet.png" alt="Inbound Marketing" class="service">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-image">
+                                <img src="./img/sollar-paulistano.png" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="case col-lg-3 col-md-6" data-aos="fade-right">
+                        <a target="_blank" href="https://voacobrancaseducacionais.com.br/" class="card">
+                            <div class="card-text">
+                                <div class="row services">
+                                    <div class="col-4">
+                                        <img src="./img/smartphones.png" alt="Desenvolvimento de Produtos Digitais"
+                                            class="service">
+                                    </div>
+                                    <div class="col-4">
+                                        <img src="./img/speaker.png" alt="Marketing Digital" class="service">
+                                    </div>
+                                    <div class="col-4">
+                                        <img src="./img/web-browser.png" alt="Criação de Site e Loja Virtual"
+                                            class="service">
+                                    </div>
+                                    <div class="col-4">
+                                        <img src="./img/magnet.png" alt="Inbound Marketing" class="service">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-image">
+                                <img src="./img/voa-cobrancas.png" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="case col-lg-3 col-md-6" data-aos="fade-right">
+                        <a target="_blank" href="https://weconsorcios.com.br/" class="card">
+                            <div class="card-text">
+                                <div class="row services">
+                                    <div class="col-4">
+                                        <img src="./img/web-browser.png" alt="Criação de Site e Loja Virtual"
+                                            class="service">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-image">
+                                <img src="./img/vve-consorcios.png" alt="">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/glider.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var stream = document.querySelector('.gallery__stream');
+            var items = document.querySelectorAll('.gallery__item');
+
+            var prev = document.querySelector('.gallery__prev');
+            prev.addEventListener('click', function () {
+                stream.insertBefore(items[items.length - 1], items[0]);
+                items = document.querySelectorAll('.gallery__item');
+            });
+
+            var next = document.querySelector('.gallery__next');
+            next.addEventListener('click', function () {
+                stream.appendChild(items[0]);
+                items = document.querySelectorAll('.gallery__item');
+            });
+        });
+    </script>
+
+</body>
+
+</html>

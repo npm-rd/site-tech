@@ -645,6 +645,7 @@ header #whatsapp {
     margin-top: 2em;
     overflow: hidden;
     transition: .1s linear;
+    border: none;
 }
 
 #marcas .marcas-logos img {
@@ -653,32 +654,100 @@ header #whatsapp {
     transition: .1s linear;
 }
 
+#marcas .marcas-logos .card-image {
+    text-align: center;
+    filter: grayscale(100%);
+}
+
 #marcas .marcas-logos .case {
     transition: .5s linear;
 }
 
 #marcas .marcas-logos .card-text {
     position: absolute;
-    top: 2.5em;
+    top: 0;
     transform: rotateX(180deg);
     transition: .1s linear;
     color: white;
     opacity: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 
-#marcas .marcas-logos .case:hover>.card {
-    transform: rotateX(180deg);
+#marcas .card-text .services {
+    padding: 0 1.2em 0 1.2em;
+    text-align: center !important;
+}
+
+#marcas .card-text .service {
+    width: 2em;
+    margin: .8em 0 .8em 0;
+    filter: invert(100%);
+}
+
+#marcas .card-text .service:hover {
+    /* background-color: red;
+    filter: invert(0%); */
+}
+
+#marcas .marcas-logos .gallery__item:hover>.card {
     transition: .5s linear;
-    background-color: rgba(0, 0, 0, 0.726);
 }
 
-#marcas .marcas-logos .case:hover > .card .card-text {
+#marcas .marcas-logos .link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.644);
+    height: 100%;
+    width: 100%;
+    transition: .5s linear;
+    z-index: 1;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    transform: translateY(100%);
+    transition: .3s all ease;
+}
+
+/* #marcas .marcas-logos .gallery__item .card:hover > .link {
+    transform: translateY(0%) !important;
+} */
+
+#marcas .marcas-logos .gallery__item:hover > .card .card-text {
     transition: .9s linear;
     opacity: 1;
 }
 
-#marcas .marcas-logos .case:hover > .card .card-image {
+#marcas .lista-servicos {
+    position: absolute;
+    width: 200%;
+    left: -50%;
+    text-align: center;
+    margin-top: 1em;
+    color: white;
     opacity: 0;
+    transition: .5s all ease;
+}
+
+#marcas .lista-servicos h4 {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#marcas .lista-servicos p {
+    font-size: 12px;
+}
+
+@media (max-width:1000px) {
+    #marcas .lista-servicos {
+        width: 100%;
+        left: 0;
+    }
 }
 
 /* ================================= */
@@ -939,6 +1008,11 @@ header #whatsapp {
     font-size: .8em;
 }
 
+#contato .invite {
+    padding-top: 6em;
+    font-size: 12px;
+}
+
 @media screen and (max-width:768px) {
     #contato .design {
         display: none;
@@ -971,6 +1045,14 @@ header #whatsapp {
         display: none;
     }
 }
+
+@media (min-width: 1200px) {
+    #contato img {
+        width: 120%;
+    }
+}
+
+
 
 @media screen and (max-width:960px) {}
 

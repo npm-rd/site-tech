@@ -109,16 +109,42 @@ function scrollToTop() {
   });
 }
 
-function sendEmail() {
-    var nome = $('#nome-input').val()
-    var email = $('#email-input').val()
-    var telefone = $('#telefone-input').val()
-    var servico = $('#servico-input').val()
-    var mensagem = $('#mensagem-input').val()
-    var button = $('#button-form')
-
-    console.log({nome: nome, email: email, telefone:telefone, servico:servico, mensagem:mensagem})
+function medidas(elemento) {
+  var scroll = $(document).scrollTop() / 2.5 * 4
+  var height = document.getElementById(elemento).clientHeight
+  var position = $("#" + elemento).offset().top
+  var range = $("#" + elemento).offset().top + height
+  return {
+    scroll, height, position, range
+  }
 }
+
+function sendEmail() {
+  var nome = $('#nome-input').val()
+  var email = $('#email-input').val()
+  var telefone = $('#telefone-input').val()
+  var servico = $('#servico-input').val()
+  var mensagem = $('#mensagem-input').val()
+  var button = $('#button-form')
+  var notes = { nome: nome, email: email, telefone: telefone, servico: servico, mensagem: mensagem }
+
+  var templateParams = notes
+
+  emailjs.send('contato_tech', 'template_6nd8vop', templateParams)
+    .then(function (response) {
+      $('#nome-input').val("")
+      $('#email-input').val("")
+      $('#telefone-input').val("")
+      $('#mensagem-input').val("")
+    }, function (error) {
+      alert('Algum erro ocorreu!')
+    });
+
+}
+
+$('#button-form').click(() => {
+  sendEmail()
+})
 
 function loadPage() {
   AOS.init()
