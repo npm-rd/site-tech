@@ -120,22 +120,22 @@ function medidas(elemento) {
 }
 
 function sendEmail() {
-  var nome = $('#nome-input').val()
-  var email = $('#email-input').val()
-  var telefone = $('#telefone-input').val()
-  var servico = $('#servico-input').val()
-  var mensagem = $('#mensagem-input').val()
+  var nome = $('#nome-input')
+  var email = $('#email-input')
+  var telefone = $('#telefone-input')
+  var servico = $('#servico-input')
+  var mensagem = $('#mensagem-input')
   var button = $('#button-form')
-  var notes = { nome: nome, email: email, telefone: telefone, servico: servico, mensagem: mensagem }
+  var notes = { nome: nome.val(), email: email.val(), telefone: telefone.val(), servico: servico.val(), mensagem: mensagem.val() }
 
   var templateParams = notes
 
   emailjs.send('contato_tech', 'template_6nd8vop', templateParams)
     .then(function (response) {
-      $('#nome-input').val("")
-      $('#email-input').val("")
-      $('#telefone-input').val("")
-      $('#mensagem-input').val("")
+      nome.val("")
+      email.val("")
+      telefone.val("")
+      mensagem.val("")
     }, function (error) {
       alert('Algum erro ocorreu!')
     });
