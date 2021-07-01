@@ -79,8 +79,13 @@
     background: url("../img/banner-inboung-marketing.png") center !important;
 }
 
-#conteudo .content-topic {
-    float: left;
+#conteudo {
+    overflow-y: hidden;
+}
+
+#conteudo .content-topic img {
+    width: 100%;
+    /* float: left; */
 }
 
 #conteudo .container {
@@ -105,12 +110,46 @@
     width: 15em;
 }
 
+#conteudo h4 {
+    position: relative;
+    padding-left: 20px;
+}
+
+#conteudo h4::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: .4em;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #5D9EC5;
+}
+
+.content-topic {
+    text-align: center !important;
+}
+
+.content-topic img {
+    width: 50% !important;
+}
 @media (max-width:767px) {
     #conteudo h2::after {
         margin-left: 0;
     }
     #conteudo img {
         float: none;
+    }
+}
+
+@media (max-width:575px) {
+    #conteudo {
+        padding: 0 2em 0 2em;
+    }
+
+    .content-topic img {
+        width: 25% !important;
+        margin-bottom: 1em;
     }
 }
 

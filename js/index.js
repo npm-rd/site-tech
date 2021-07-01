@@ -42,9 +42,11 @@ function animarMenu() {
   $(document).scroll(function () {
     var height = $(document).scrollTop()
     if (height > 100) {
-      $('.navbar').css("background", "rgba(0, 0, 0, 0.568)")
+      $('.navbar').css("background", "rgba(0, 0, 0, 0.9)")
+      $('.navbar').css("padding", ".8em 0 .8em 0")
     } else {
       $('.navbar').css("background", "transparent")
+      $('.navbar').css("padding", "2em 0 2em 0")
     }
 
   });
@@ -131,7 +133,7 @@ function sendEmail() {
   var templateParams = notes
 
   emailjs.send('contato_tech', 'template_6nd8vop', templateParams)
-    .then(function (response) {
+    .then(function () {
       nome.val("")
       email.val("")
       telefone.val("")

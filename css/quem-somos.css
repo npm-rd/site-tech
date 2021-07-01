@@ -35,7 +35,7 @@
 
 .fix-bottom {
     position: absolute !important;
-    bottom: 10em !important;
+    bottom: 4em !important;
     right: .5em !important;
 }
 
@@ -52,6 +52,15 @@
     color: #5D9EC5;
     font-size: 4em;
     margin-bottom: .5em;
+}
+
+#visao img {
+    margin-bottom: 2em;
+    width: 4em;
+}
+
+#visao p {
+    margin-bottom: 4em;
 }
 
 #quem-somos .slogan{

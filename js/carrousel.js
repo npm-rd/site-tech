@@ -14,3 +14,11 @@ document.addEventListener('DOMContentLoaded', function () {
         items = document.querySelectorAll('.gallery__item');
     });
 });
+
+function autoSlide() {
+    setInterval(() => {
+        $('.gallery__next').click()
+    }, 5000)
+}
+
+autoSlide()
